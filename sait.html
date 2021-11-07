@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/normalize.css ">
+    <title>Thrivetalk</title>
+    <style>
+        .container {
+            display: grid;
+            font-weight: bolder;
+            text-align: center;
+            padding: 10px;
+            background-color: rgb(254, 255, 184);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px repeat(8, 1fr);
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+        .name {
+            display: grid;
+            color: rgb(118, 190, 202);
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        .menu {
+            color: rgb(38, 38, 117)
+        }
+
+        .header {
+            display: grid;
+            grid-row: 1/2;
+            grid-column: 1/4;
+            height: 50px;
+            justify-content: space-between;
+            grid-template-columns: 200px 1fr 400px;
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+
+        .content-1 {
+            grid-row: 2/ 4;
+            grid-column: 1/ 3;
+            background-color: rgb(254, 255, 184);
+            display: grid;
+            justify-content: stretch;
+            text-align: center;
+            align-items: center;
+        }
+
+        .content-2 {
+            grid-row: 4/ 5;
+            grid-column: 1/ 5;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 1fr 1fr 1fr;
+            text-align: center;
+            color: whitesmoke;
+            font-size: 30px;
+
+        }
+
+        .content-3 {
+            grid-row: 5/ 6;
+            grid-column: 1/ 5;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 1fr 1fr;
+            text-align: center;
+            color: rgb(38, 38, 117);
+            font-size: 20px;
+        }
+
+        .content-4 {
+            grid-row: 6/ 8;
+            grid-column: 1/ 5;
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: repeat(3, 1fr);
+            text-align: center;
+            color: rgb(38, 38, 117);
+            font-size: 20px;
+        }
+
+        .content-4_pict {
+            display: grid;
+            grid-row: 6/ 8;
+            grid-column: 1/2;
+            justify-content: start;
+            text-align: left;
+            align-items: stretch;
+            width: 50%;
+        }
+
+        .content-4_know {
+            display: grid;
+            grid-row: 6/ 7;
+            grid-column: 3/5;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .content-4_text {
+            display: grid;
+            grid-row: 7/ 8;
+            grid-column: 3/5;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .content-4_help {
+            display: grid;
+            grid-row: 8/ 9;
+            grid-column: 3/5;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .content-3_help {
+            display: grid;
+            grid-row: 5/ 6;
+            grid-column: 1/ 5;
+        }
+
+        .sidebar {
+            display: grid;
+            grid-row: 2 / 4;
+            grid-column: 3 / 4;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+
+        }
+
+        .footer {
+            grid-row: 9/10;
+            grid-column: 1 / 4;
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(254, 255, 184);
+        }
+
+
+        .blok {
+            height: 400px;
+            width: 250px;
+            display: grid;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            grid-row: 1/3;
+
+        }
+
+        .foto {
+            display: grid;
+            height: 100px;
+        }
+
+        .pict {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .linkedin {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .link {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .goodman {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        @media screen and (min-width: 400px) and (max-width: 599px) {
+            .footer {
+                display: none;
+            }
+
+            .main {
+                height: 40vh;
+            }
+
+            .header {
+                height: 40vh;
+            }
+
+            .sidebar {
+                height: 40vh;
+            }
+
+            .container {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="name">
+                <h1>Thrivetalk</h1>
+            </div>
+            <nav class="mainmenu">
+                <a class="menu" href="directions.html"> Home</a>
+                <a class="menu" href="about.html">About </a>
+                <a class="menu" href="contacts.html"> Services</a>
+                <a class="menu" href="blog.html"> Blog</a>
+            </nav>
+            <div class="buttom1">
+                <button style="background-color: rgb(118, 190, 202);">CONTACT US</button>
+            </div>
+        </header>
+        <div class=" content-1">
+            <p style="color: rgb(118, 190, 202); font-size: 20px;">Thrivetalk </p>
+            <p style="color: rgb(38, 38, 117); font-size: 38px;">HELPING YOU THRIVE </br>IN ALL AREAS OF LIFE
+            </p>
+            <p style="color: rgb(38, 38, 117); font-size: 25px;">Our highly talented therapists can help you
+                <br> with a
+                range of issues
+                including relationships,<br> sex,
+                PTSD,
+                depression, social anxiety, or even<br> just caring for yourself more.
+            </p>
+            <button style="background-color: coral; width: 100px;"> WHO AM I</button>
+            <button style="background-color: coral; width: 100px;"> WHAT TO DO</button>
+        </div>
+        <div class="content-2">
+            <p style="background-color: rgb(27, 27, 85);"> Physical Health</p>
+            <p style="background-color: rgb(57, 57, 207);">Mental Health</p>
+            <p class="pict" style="background-image: url(./assets/images/joanna-kosinska-340748.png);">
+                Nutrition
+            </p>
+            <p style="background-color: rgb(37, 163, 163);">Gymnastics</p>
+            <p style="background-color: rgba(179, 179, 179, 0.925);">Crossfit</p>
+            <p style="background-color:violet;">Aerobics</p>
+        </div>
+        <div class="content-3">
+            <p class="content-3_about">ABOUT US</p>
+            <p class="content-3_text">We want to help you thrive! Whether you are just looking for someone to talk to,
+                or are struggling with a mental wellness issue we’re here to help. Our highly talented therapists can
+                help you with a range of issues including relationships, sex, PTSD, depression, social anxiety, or even
+                just caring for yourself more. </p>
+            <a class="content-3_help" href="help.html">WE CAN HELP YOU WITH</a>
+        </div>
+        <div class="content-4">
+            <p class="content-4_know">YOU SHOULD ALSO KNOW</p>
+            <p class="content-4_text">MDD affects more than 16.1 million American adults, or about 6.7%of the U.S.
+                population age 18 and older in a given year. We at ThriveTalk can help you.</p>
+            <a class="content-4_help" href="help2.html">GET HELP NOW</a>
+            <aside class="content-4_pict"> <img class="linkedin" src="assets/images/linkedin-sales-navigator-402831.png"
+                    alt="li">
+            </aside>
+        </div>
+        <aside class="sidebar"> <img class="link" src="./assets/images/link25.png" alt="school"></aside>
+        <footer class="footer">
+            <div class="blok foto"> <img class="goodman" src="./assets/images/autumn-goodman-242825.png" alt="autumn"
+                    width="400px">
+            </div>
+            <div class="blok">
+                <p>SOME INFO<br>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula.
+                </p>
+            </div>
+            <div class="blok">
+                <p>ENFOLD HEALTH <br>
+                    Main Street 1, Olcott<br>
+                    Buffalo, United States<br>
+
+                    +555 283 784 333<br>
+                    office@enfold-health.com
+                </p>
+            </div>
+            <div class="blok">
+                <p>
+                    OFFICE HOURS<br>
+                    Mo-Fr: 8:00-19:00<br>
+                    Sa: 8:00-14:00<br>
+                    Su: closed
+                </p>
+            </div>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
